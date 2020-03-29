@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+           
+  $mainColor : #37b4a8 ;
+  //$secColor : #14A99B;
+  $secColor : rgb(6, 119, 108);
+
+
+  .mainclr{
+    color: $mainColor;
+  }
+  .secclr{
+   color : $secColor;
+  }
+///////////////Nav Bars///////////////////////////
+.backimg{
+    background: url("src/assets/images/nav.jpeg") center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+
+    
+   background: rgba(255, 250, 250, 0.753) 0.2 !important;
+   
+      
+}
+/////////////////////////////////
+div {
+  &.background {
+    background: url("src/assets/images/nav.jpeg")  center center fixed;
+    border: 2px solid black;
+    hr{
+    background-color: #ffffff;
+ 
+    }
+     li {
+     > a {
+      
+      font-size: 18px  !important;
+      color: #FFF  !important;
+     // font-family: 'Dancer Script', cursive;
+     // font-family: 'SSTArabic-Bold';
+
+      }
+      &:hover a {
+        color: #fff  !important;
+        background-color: $secColor !important;
+      
+      }
+    }
+  }
+
+  &.transbox {
+    //margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+
+  
+  }
+
+}
+///////////End Nav bars///////////
+
+///////// Start Button ////////
+
+.btn-primary {
+  color: #fff;
+  background-color: $secColor !important;
+  border-color: $secColor !important;
+
+  &:hover {
+    color: #fff;
+    background-color: $mainColor;
+    border-color: $mainColor;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+}
+/////Outline btn /////////////
+.btn-outline-primary {
+  color: $mainColor;
+  border-color: $mainColor;
+
+  &:hover {
+    color: #fff !important;
+    background-color: $mainColor;
+    border-color: $mainColor;
+  }
+
+
+}
+/////////////////////////////////
+.sphr{
+  display: inline-block;
+  background-color: $secColor ;
+  border-width: 3px;
+  width: 8%;
+  
+  }
+
+  .middlehr{
+    background-color: $secColor ;
+    border-width: 3px;
+    width: 10%;
+    
+    }
+  
+
+/////////////////////////////////
+
+.csl-cpton{
+  left: 5%;
+  bottom: -20%;
+ 
+}

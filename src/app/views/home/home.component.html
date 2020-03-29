@@ -1,0 +1,97 @@
+<div class="container ">
+  <h6 class="text-muted mt-3"><span class="font-weight-bold">Main</span> | Knowledge Center</h6>
+
+  <h4 class="mt-5 mainclr">Knowledge Center</h4>
+
+  <hr class="sphr">
+
+</div>
+
+<!--Start Slider-->
+<div class="container bd-example ">
+  <div id="carouselExampleCaptions" class="carousel slide mt-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption csl-cpton h-75 d-none d-md-block ml-auto ">
+          <!--  <div class="carousel-caption d-flex h-50 align-items-left justify-content-left">-->
+          <!--Caaaaaaaaaaption-->
+          <div class="w-75 h-50 text-left bg-light p-2 ">
+
+            <h3 class="my-2 mainclr ml-2">Choose the appropriate procedure</h3>
+            <p class="text-dark ml-2">Choosing the optimal procedure is a servere challenge for many people who have no
+              experience. In this article we will</p>
+
+
+
+            <a href="#" class="btn btn-primary btn-lg mx-3">More Details</a>
+            <a href="#" class="btn btn-outline-primary btn-lg">All Articles</a>
+
+          </div>
+          <!--Caaaaaaaaaaaption-->
+        </div>
+
+      </div>
+      <!--</div>-->
+
+    </div>
+
+    <!--Buttons -->
+
+    <!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+    <!--Buttons -->
+
+  </div>
+</div>
+<!--End Slider-->
+
+
+<!-- Start Search input-->
+<div class="container">
+  <div class="input-group  col-md-4 mt-5 ml-auto">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fas fa-search"></i></span>
+    </div>
+    <input type="text" placeholder="أكتب ما تبحث عنه" class="form-control text-right" aria-label="Large"
+      aria-describedby="inputGroup-sizing-sm">
+  </div>
+</div>
+<!--End Search input-->
+
+
+<!--Start Caaaaards-->
+<div class=" mt-5">
+
+
+  <div class="d-flex justify-content-center row">
+
+    <div class="card col-lg-3 ml-3 mb-3" *ngFor='let p of postData | slice:0:15'>
+      <img src="assets/images/22.JPG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <a class="nav-link text-left list-unstyled text-dark" routerLink="article/{{p.id}}">
+          <h5 class="">{{p.title}}</h5>
+        </a>
+      </div>
+      <!-- end col -->
+    </div>
+
+    <!--End caaaaaaaards-->
+    <!--Start Icons-->
+    <app-icon class="input-group"></app-icon>
+    <!--End Icons-->
